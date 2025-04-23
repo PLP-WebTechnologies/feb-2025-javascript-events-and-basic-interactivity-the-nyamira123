@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Welcome to the JS Playground 🎮</h1>
+
+  <!-- Event Handling Section -->
+  <button id="colorButton">Change My Color</button>
+  <div id="hoverBox">Hover Over Me</div>
+  <input type="text" id="keyInput" placeholder="Type something..." />
+
+  <button id="secretButton">Double Click Me</button>
+
+  <!-- Interactive Section -->
+  <div class="gallery">
+    <img src="https://via.placeholder.com/150" alt="Sample Image" id="galleryImage">
+  </div>
+  <button onclick="changeImage()">Next Image</button>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab" onclick="openTab('Tab1')">Tab 1</button>
+    <button class="tab" onclick="openTab('Tab2')">Tab 2</button>
+    <div id="Tab1" class="tabcontent">This is Tab 1</div>
+    <div id="Tab2" class="tabcontent" style="display:none;">This is Tab 2</div>
+  </div>
+
+  <!-- Form -->
+  <form id="registerForm">
+    <h2>Register</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required minlength="8">
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
